@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cyber Crime Awareness</title>
+    <!-- เชื่อมต่อ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- เชื่อมต่อ Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- เชื่อมต่อ Font Awesome สำหรับไอคอน -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@700&family=Roboto&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- นำทาง (Navigation Bar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="#"> Cyber Crime </a>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Menu Items -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home"><i class="fas fa-home"></i> หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#types"><i class="fas fa-list"></i> ประเภทของอาชญากรรม</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prevention"><i class="fas fa-shield-alt"></i> วิธีการป้องกัน</a>
+                    </li>
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            <i class="fas fa-info-circle"></i> ข้อมูลเพิ่มเติม
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#news">ข่าวสาร</a></li>
+                            <li><a class="dropdown-item" href="#articles">บทความ</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#contact">ติดต่อเรา</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Search Form -->
+                <!-- <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="ค้นหา" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">ค้นหา</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- ส่วนแบนเนอร์หลัก (Hero Section) -->
+    <section id="home" class="hero-section text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInDown">
+                รู้ทันอาชญากรรมทางไซเบอร์
+            </h1>
+            <p class="lead animate__animated animate__fadeInUp">
+                ปกป้องตนเองในโลกออนไลน์ด้วยความรู้และความเข้าใจ
+            </p>
+            <a href="#types"
+                class="btn btn-primary mt-3 animate__animated animate__zoomIn animate__delay-1s">เรียนรู้เพิ่มเติม</a>
+        </div>
+    </section>
+
+    <!-- เนื้อหาเว็บไซต์ -->
+    <div class="container mt-5">
+        <!-- หมวดหมู่: ประเภทของอาชญากรรม -->
+        <section id="types" class="mt-5 reveal">
+            <h2 class="mb-4 text-center">ประเภทของอาชญากรรมทางไซเบอร์</h2>
+            <div class="row">
+                <!-- แฮ็กกิ้ง -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <img src="https://cdn-wordpress-info.futurelearn.com/wp-content/uploads/what-is-ethical-hacking.jpg.optimal.jpg"
+                            class="card-img-top img-fluid" alt="Hacking" />
+                        <div class="card-body">
+                            <h5 class="card-title">แฮ็กกิ้ง (Hacking)</h5>
+                            <p class="card-text">
+                                การเข้าถึงระบบหรือข้อมูลโดยไม่ได้รับอนุญาต เพื่อขโมย แก้ไข
+                                หรือทำลายข้อมูล
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ฟิชชิ่ง -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <img src="https://www.bitdefender.co.th/media/post/image/p/h/phishing-6573326_1280.png"
+                            class="card-img-top img-fluid" alt="Phishing" />
+                        <div class="card-body">
+                            <h5 class="card-title">ฟิชชิ่ง (Phishing)</h5>
+                            <p class="card-text">
+                                การหลอกลวงเพื่อให้เหยื่อเปิดเผยข้อมูลส่วนตัว เช่น รหัสผ่าน
+                                หรือข้อมูลบัตรเครดิต
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- มัลแวร์ -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <img src="https://signal.avg.com/hs-fs/hubfs/Blog_Content/Avg/Signal/AVG%20Signal%20Images/what_is_malware_refresh_signal/What-is-Malware-01.png?width=1321&height=601&name=What-is-Malware-01.png"
+                            class="card-img-top img-fluid" alt="Malware" />
+                        <div class="card-body">
+                            <h5 class="card-title">มัลแวร์ (Malware)</h5>
+                            <p class="card-text">
+                                ซอฟต์แวร์ที่ถูกออกแบบมาเพื่อทำลายหรือขโมยข้อมูลจากระบบคอมพิวเตอร์
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- หมวดหมู่: วิธีการป้องกัน -->
+        <section id="prevention" class="p-5 mt-5 reveal">
+            <h2 class="mb-4 text-center">วิธีการป้องกัน</h2>
+            <div class="row">
+                <!-- การตั้งรหัสผ่านที่ปลอดภัย -->
+                <div class="col-md-6">
+                    <h4><i class="fas fa-lock"></i> การตั้งรหัสผ่านที่ปลอดภัย</h4>
+                    <p>ใช้รหัสผ่านที่มีความซับซ้อน และเปลี่ยนรหัสผ่านอย่างสม่ำเสมอ</p>
+                </div>
+                <!-- การใช้งาน VPN -->
+                <div class="col-md-6">
+                    <h4><i class="fas fa-shield-alt"></i> การใช้งาน VPN</h4>
+                    <p>ปกป้องข้อมูลของคุณด้วยการเข้ารหัสผ่านเครือข่ายส่วนตัวเสมือน</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- หมวดหมู่: กฎหมายและข้อบังคับ -->
+        <section id="laws" class="p-5 mt-5 reveal">
+            <h2 class="mb-4 text-center">กฎหมายและข้อบังคับ</h2>
+            <div class="row">
+                <!-- กฎหมายในประเทศ -->
+                <div class="col-md-6">
+                    <h4><i class="fas fa-gavel"></i> กฎหมายในประเทศ</h4>
+                    <p>
+                        พระราชบัญญัติว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ พ.ศ. 2560
+                    </p>
+                </div>
+                <!-- กฎหมายระหว่างประเทศ -->
+                <div class="col-md-6">
+                    <h4><i class="fas fa-balance-scale"></i> กฎหมายระหว่างประเทศ</h4>
+                    <p>สนธิสัญญาบูดาเปสต์ว่าด้วยอาชญากรรมทางไซเบอร์</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- หมวดหมู่: สื่อและทรัพยากร -->
+        <section id="resources" class="p-5 mt-5 reveal">
+            <h2 class="mb-4 text-center">สื่อและทรัพยากร</h2>
+
+            <!-- อินโฟกราฟิก Carousel -->
+            <h3 class="mb-3">อินโฟกราฟิกที่น่าสนใจ</h3>
+            <div id="infographicCarousel" class="carousel slide bg-dark" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- ไอเท็ม Carousel -->
+                    <div class="carousel-item active">
+                        <img src="https://www.ebcgroup.co.uk/hs-fs/hubfs/EBC_Group_May_2023/images/Cyber_Crime_Infographic.webp?width=400&height=1000&name=Cyber_Crime_Infographic.webp"
+                            class="d-block w-100 img-fluid" alt="อินโฟกราฟิก 1" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.pinimg.com/originals/9d/c6/da/9dc6dad689aba1b1f20068211d887b5a.jpg"
+                            class="d-block w-100 img-fluid" alt="อินโฟกราฟิก 2" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d20ohkaloyme4g.cloudfront.net/img/document_thumbnails/053829a86f4bf89087600088fe7dee51/thumb_1200_1697.png"
+                            class="d-block w-100 img-fluid" alt="อินโฟกราฟิก 3" />
+                    </div>
+                </div>
+                <!-- ปุ่มควบคุม Carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#infographicCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#infographicCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <!-- วิดีโอ -->
+            <h3 class="p-5 mt-5 mb-3">วิดีโอให้ความรู้</h3>
+            <div class="row reveal">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/gWGhUdHItto?si=TSOw9hQYoYT_TZ-p"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p class="mt-2">What is Phishing</p>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="วิดีโอ 2"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p class="mt-2">รู้จักกับมัลแวร์และวิธีป้องกัน</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ส่วนท้ายเว็บไซต์ (Footer) -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        &copy; 2023 Cyber Crime Awareness | ออกแบบโดย Supachok
+    </footer>
+
+    <!-- เชื่อมต่อ Custom JS -->
+    <script src="custom.js"></script>
+</body>
+
+</html>
