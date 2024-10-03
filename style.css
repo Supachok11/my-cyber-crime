@@ -11,7 +11,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background: transparent;
+    /* background: transparent; */
     transition: background-color 0.5s, padding 0.5s, box-shadow 0.5s;
     box-shadow: none;
 }
@@ -24,7 +24,7 @@ body {
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #fff;
+    color: #d1d1d1;
 }
 
 .navbar-nav .nav-item {
@@ -173,3 +173,4 @@ footer {
     transform: translateX(0px);
     opacity: 1;
 }
+
